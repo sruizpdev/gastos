@@ -9,12 +9,11 @@ const Modal = ({ setModal, animarModal, setAnimarModal, guardarGasto }) => {
   const [mensaje, setMensaje] = useState("");
 
   const ocultarModal = () => {
-    setModal(false);
     setAnimarModal(false);
     setTimeout(() => {
       setModal(false);
     }, 500);
-    guardarGasto;
+    
   };
 
   const handleSubmit = (e) => {
